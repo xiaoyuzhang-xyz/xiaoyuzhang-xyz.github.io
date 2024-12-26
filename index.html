@@ -10,12 +10,12 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         nav {
             background: #333;
             color: #fff;
             padding: 1em 0;
+            text-align: center;
         }
         nav a {
             color: #fff;
@@ -27,9 +27,19 @@
             text-decoration: underline;
         }
         .container {
-            margin: 50px auto;
-            max-width: 600px;
-            text-align: center;
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        .column img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -41,11 +51,16 @@
     </nav>
 
     <div class="container">
-        <h1>Welcome to My Personal Website</h1>
-        <p>I am currently an Assitant Professor at Central University of Finance and Economics. I received my Ph.D. degree from National University of Singapore in 2020. </p>
-        <p>My research interests are in household finance and banking. My work focuses on the credit supply from banks and other financial institutions, and the impact on household consumption, and borrowing behavior. I am also interested in housing market.</p>
-    	<h1>Contact information</h1>
-    	<p>xiaoyuzhang[AT]u.nus.edu </p>
+        <div class="column">
+            <img src="your-photo.jpg" alt="Your Photo">
+        </div>
+        <div class="column">
+            <h1>Welcome to My Website</h1>
+            <p>I am currently an Assitant Professor at Central University of Finance and Economics. I received my Ph.D. degree from National University of Singapore in 2020.</p>
+            <p>My research interests are in household finance and banking. My work focuses on the credit supply from banks and other financial institutions, and the impact on household consumption, and borrowing behavior. I am also interested in housing market.</p>
+            <h1>Contact information</h1>
+            <p>xiaoyuzhang[AT]u.nus.edu</p>
+        </div>
     </div>
 </body>
 </html>
